@@ -1,0 +1,15 @@
+1.frontend: angular2
+2.backend:
+    2.1 connects to angular2: 
+    node.js, 
+    Express.js(create RESTFul services), 
+    Nodemon(monitor for any changes in source and auto restart serer and reload code)
+    authentication:  PassportJS utilizing JWT
+
+    2.2 connects to apache spark:
+        option A: RESTFul: Livy or spark-jobserver
+            (node.js - livy or spark-jobserver - database)
+        option B: apache spark grab data from database, then update info into database. 
+            (node.js - database - apache spark)
+
+3. database: MongoDB
